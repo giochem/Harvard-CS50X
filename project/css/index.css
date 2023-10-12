@@ -1,0 +1,63 @@
+/* setup default */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+* {
+  margin: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:active {
+  text-decoration: none;
+}
+body {
+  font-family: "Oxygen", sans-serif;
+  background-color: black;
+  color: white;
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.header__developer {
+  margin-right: 60px;
+}
+.header__developer:hover {
+  cursor: pointer;
+}
+.header__support {
+  margin-right: 45px;
+}
+.header__support:hover {
+  cursor: pointer;
+}
+/* name app */
+.name_app {
+  margin-top: 10px;
+  font-size: 128px;
+  font-weight: 550;
+}
+/* content */
+.content {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+}
+.get_started {
+  width: 150px;
+  line-height: 60px;
+  border-radius: 12px;
+  background-color: bisque;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  transition: transform 0.5s;
+}
+.get_started:hover {
+  background-color: aqua;
+  transform: scale(1.2);
+}

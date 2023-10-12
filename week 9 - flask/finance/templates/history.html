@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-start">Symbol</th>
+            <th class="text-end">Shares</th>
+            <!-- <th class="text-end">Price</th> -->
+            <th class="text-end">Type</th>
+            <th class="text-end">Transacted</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for port in portfolio %}
+            <tr>
+                <td class="text-start">{{port["symbol"]}}</td>
+                <td class="text-end">{{port["shares"]}}</td>
+                <!-- <td class="text-end">{{port["price"]}}</td> -->
+                <td class="text-end">{{port["type"]}}</td>
+                <td class="text-end">{{port["transacted"]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
